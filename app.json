@@ -14,6 +14,7 @@
       "tgcalls",
       "voip"
     ],
+    "logo": "https://telegra.ph/file/d207a8f8260ddb6ac0654.jpg",
     "env": {
       "API_ID": {
         "description": "api_id part of your Telegram API Key from my.telegram.org/apps",
