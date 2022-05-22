@@ -127,8 +127,8 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Deploy By', url='https://t.me/xrinhere'),
-            InlineKeyboardButton('🧩 Source', url='https://github.com/iamfth/VCPlayerBot')
+            InlineKeyboardButton('⚙️ Deploy By', url='https://t.me/file_sharing_support'),
+            InlineKeyboardButton('🧩 Source', url='https://github.com')
         ],
         
     ]
@@ -183,14 +183,14 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-           InlineKeyboardButton('⚙️ Deploy by', url='https://t.me/xrinhere'),
+           InlineKeyboardButton('⚙️ Deploy by', url='https://t.me/file_sharing_support'),
         ],
         [
       
             InlineKeyboardButton('🗑 Close', callback_data='close'),
         ]
     ]
-    await message.reply("<b>The source code of this bot is public and can be found at <a href=https://github.com/iamfth/VCPlayerBot>VCPlayerBot.</a>\nYou can deploy your own bot and use in your group.\n\nFeel free to star☀️ the repo if you liked it 🙃.</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply("<b>The source code of this bot is private and can be found at <a href=https://github.com.</a>\nYou can deploy your own bot and use in your group.\n\nFeel free to star☀️ the repo if you liked it 🙃.</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
     await delete_messages([message])
 
 @Client.on_message(filters.command(['restart', 'update', f"restart@{Config.BOT_USERNAME}", f"update@{Config.BOT_USERNAME}"]) & admin_filter & chat_filter)
